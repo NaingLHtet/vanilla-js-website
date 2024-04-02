@@ -413,45 +413,6 @@ p {
   opacity: 1;
 }
 
-/* media queries for smaller screen */
-@media only screen and (max-width: 768px) {
-  .navLink-con {
-    display: none;
-  }
-  
-  .icon-con i {
-    margin: 0 20px;
-  }
-  
-  #userNameInput {
-    width: 60%;
-  }
-  
-  #commentarea {
-    width: 90%;
-    font-size: 16px;
-    padding: 5px;
-  }
-  
-  .comment-btn {
-    font-size: 16px;
-  }
-  
-  .confirm-box {
-    width: 60%;
-    left: 20%;
-  }
-  
-  .cancel,.ok {
-    font-size: 16px;
-  }
-  
-  .go-to-top {
-    right: 10px;
-  }
-}
-
-
 /* toast alert */
 .toastAlertContainer {
   width: 100%;
@@ -489,7 +450,7 @@ p {
   height: 100%;
   background-color: #131313;
   border-left: 2px solid #fff;
-  animation: animate 6s steps(40) infinite;
+  animation: animate 9s ease-in-out infinite;
 }
 
 #commentText.commentText-dayMood:before {
@@ -503,5 +464,47 @@ p {
   }
   100% {
     left: 0%;
+  }
+}
+
+/* media queries for smaller screen */
+@media only screen and (max-width: 768px) {
+  .navLink-con {
+    display: none;
+  }
+  
+  .icon-con i {
+    margin: 0 20px;
+  }
+  
+  #userNameInput {
+    width: 60%;
+  }
+  
+  #commentarea {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  .comment-btn {
+    font-size: 16px;
+  }
+  
+  .confirm-box {
+    width: 60%;
+    left: 20%;
+  }
+  
+  .cancel,.ok {
+    font-size: 16px;
+  }
+  
+  .go-to-top {
+    right: 10px;
+  }
+
+  #commentText {
+    font-size: 16px;
   }
 }
