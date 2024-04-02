@@ -263,13 +263,13 @@ const textAboveComment = () => {
   }, 0);
   setTimeout(() => {
     commentText.textContent = "Leave a comment about your fav movies _";
-  }, 6000);
+  }, 8900);
 };
 
 textAboveComment();
 setInterval(() => {
   textAboveComment();
-}, 12000);
+}, 18000);
 
 
 // toast alert on clicking comment button
