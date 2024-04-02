@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Poppins", "Open Sans", "Dancing Script", "sans-serif";
+}
+
+body {
+  width: 100vw;
+  background-color: #131313;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* sidebar styling */
+.sidebar {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  background-color: #181818;
+  padding: 20px 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  border-right: 2px solid #181818;
+}
+
+.sidebarHead {
+  font-size: 3rem;
+  font-family: "Dancing Script", "Roboto", "Poppins", "Open Sans", "sans-serif";
+}
+
+.closeBtn-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.fa-x {
+  font-size: 2rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* day night mood change button */
+.switchMood-con {
+  display: flex;
+  align-items: center;
+  padding: 30px 10px;
+  margin-top: 30px;
+}
+
+.switchMood-con span {
+  font-size: 3rem;
+}
+
+.iconCon {
+  width: 60px;
+  height: 60px;
+  background-color: #575757;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon {
+  display: none;
+}
+
+.dn-mood {
+  color: #fff;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #343a40;
+  overflow: auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navtosections {
+  padding: 30px 10px;
+  font-size: 18px;
+}
+
+.navtosections:hover {
+  background-color: #7e7e7e;
+}
+
+/* styling for navigation bar */
+#navCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #343a40;
+  border-bottom: 2px solid #000;
+  color: #fff;
+}
+
+.fa-bars {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navLink-con {
+  display: flex;
+}
+
+.navLink-con div {
+  padding: 10px 20px;
+  background-color: #5306e1;
+  margin: 0 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navLink-con div:active {
+  transform: scale(0.95);
+}
+
+
+
+/* style the main page content */
+#hobbitHeader,
+#lotrHeader {
+  text-align: center;
+  margin: 40px 0;
+}
+
+p {
+  text-indent: 10%;
+  line-height: 2em;
+  padding: 20px 10px;
+}
+
+.source {
+  text-align: right;
+  margin-right: 10px;
+}
+
+#HobbitM-order,
+#lotrM-order {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.hobbit-movies .movie-list,
+.lotr-movies .movie-list {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#hobbit-imgcon,
+#lotr-imgcon {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #343a40;
+  border-bottom: 2px solid #464646;
+  margin-top: 10px;
+}
+
+#hobbit-imgcon img,
+#lotr-imgcon img {
+  width: 200px;
+  height: 300px;
+  margin: 20px 0;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+#hobbit-imgcon img:hover,
+#lotr-imgcon img:hover {
+  transform: scale(1.1);
+}
+
+.runTime {
+  padding: 10px;
+  background-color: #023347;
+  width: 250px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.runTime li {
+  list-style: none;
+  font-weight: bold;
+}
+
+
+
+
+/* comment section */
+.commentCon {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.inputCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#commentText {
+  display: inline-block;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#commentarea {
+  width: 60%;
+  height: 100px;
+  background-color: #464646;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  resize: none;
+  overflow: auto;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #020021;
+  letter-spacing: 1px;
+}
+
+.comment-btn {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #5306e1;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.comment-btn:active {
+  transform: scale(0.95);
+}
+
+.resultComments-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* user name */
+#userNameInput {
+  width: 30%;
+  background-color: #464646;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 2px;
+  border: 1px solid #020021;
+  outline: none;
+  font-weight: 600;
+}
+
+.nameCommentCon {
+  width: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #343a40;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.fa-trash {
+  position: absolute;
+  top: 26px;
+  right: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.userName-con {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* footer css */
+#footerEl {
+  border-top: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.contact-text {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+.icon-con {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-con i {
+  margin: 0 60px;
+  font-size: 25px;
+}
+
+
+/* message delete confirm box */
+.confirm-box {
+  width: 40%;
+  height: 15%;
+  position: fixed;
+  left: 30%;
+  top: 42.5%;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.message-text {
+  height: 65%;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.button-con {
+  height: 35%;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cancel,.ok {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.cancel:active,
+.ok:active {
+  transform: scale(0.98);
+}
+
+/* send back button to top */
+.go-to-top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 2px solid #848484;
+  opacity: 0.4;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.left-line,
+.right-line {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #848484;
+  border-radius: 2px;
+}
+
+.left-line {
+  left: 12px;
+  top: 25px;
+  transform: rotate(-45deg);
+}
+
+.right-line {
+  right: 12px;
+  top: 25px;
+  transform: rotate(45deg);
+}
+
+.go-to-top:hover {
+  opacity: 1;
+}
+
+/* media queries for smaller screen */
+@media only screen and (max-width: 768px) {
+  .navLink-con {
+    display: none;
+  }
+  
+  .icon-con i {
+    margin: 0 20px;
+  }
+  
+  #userNameInput {
+    width: 60%;
+  }
+  
+  #commentarea {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  .comment-btn {
+    font-size: 16px;
+  }
+  
+  .confirm-box {
+    width: 60%;
+    left: 20%;
+  }
+  
+  .cancel,.ok {
+    font-size: 16px;
+  }
+  
+  .go-to-top {
+    right: 10px;
+  }
+}
+
+
+/* toast alert */
+.toastAlertContainer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.toastAlert {
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #5306e1;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.textforCommentCon {
+  overflow: hidden;
+}
+
+#commentText {
+  position: relative;
+  padding-right: 15px;
+}
+
+#commentText:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131313;
+  border-left: 2px solid #fff;
+  animation: animate 6s steps(40) infinite;
+}
+
+#commentText.commentText-dayMood:before {
+  background-color: #fff;
+  border-left: 2px solid #000;
+}
+
+@keyframes animate {
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}

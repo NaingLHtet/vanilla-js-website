@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbit/LOTR</title>
+    <script src="https://kit.fontawesome.com/df7f47a529.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body">
+    <!-- code for sidebar -->
+    <div class="sidebar">
+      <div class="closeBtn-con">
+        <h1 class="sidebarHead">H/L</h1>
+        <i class="fa-solid fa-x"></i>
+      </div>
+      
+      <!-- Day/Night Mood Button -->
+      <div class="switchMood-con">
+        <div class="iconCon">
+         <span class="material-symbols-outlined sun dn-mood">
+          light_mode
+         </span>
+         <span class="material-symbols-outlined moon dn-mood">
+          nightlight
+         </span>
+        </div>
+      </div>
+      
+      
+      <!--<div class="sidebar-links">
+       <a href="#hobbitHeader">Hobbit Series</a>
+       <a href="#HobbitM-order">Hobbit movies in order</a>
+       <a href="#lotrHeader">LOTR Series</a>
+       <a href="#lotrM-order">LOTR movies in order</a>
+      </div>-->
+      
+      <!-- use this code to make the page dynamic instead of the code above -->
+      <div class="sidebar-links">
+       <div onclick="scrollToSection('hobbitHeader')" class="navtosections">Hobbit Series</div>
+       <div onclick="scrollToSection('HobbitM-order')" class="navtosections">Hobbit movies in order</div>
+       <div onclick="scrollToSection('hobbit-imgcon')" class="navtosections">Hobbit movies images</div>
+       <div onclick="scrollToSection('lotrHeader')" class="navtosections">LOTR Series</div>
+       <div onclick="scrollToSection('lotrM-order')" class="navtosections">LOTR movies in order</div>
+       <div onclick="scrollToSection('lotr-imgcon')" class="navtosections">LOTR movies images</div>
+       <div onclick="scrollToSection('commentText')" class="navtosections">Comments</div>
+       <div class="navtosections">HOME</div>
+       <div class="navtosections about-El">ABOUT</div>
+       <div onclick="scrollToSection('footerEl')" class="navtosections">CONTACT</div>
+      </div>
+      
+    </div>
+    
+    <!-- code for navbar -->
+    <nav id="navCon">
+     <i class="fa-solid fa-bars"></i>
+     <div class="navLink-con">
+       <div>HOME</div>
+       <div class="about-El">ABOUT</div>
+       <div onclick="scrollToSection('footerEl')">CONTACT</div>
+     </div>
+    </nav>
+    
+    <!-- main content -->
+    <div class="main-container">
+      
+      <!-- Hobbit Series -->
+      <h1 id="hobbitHeader">The Hobbit (film series)</h1>
+      <p>
+        <b>The Hobbit</b> is a series of three epic high fantasy adventure films directed by Peter Jackson. The films are subtitled An Unexpected Journey (2012), The Desolation of Smaug (2013), and The Battle of the Five Armies (2014).The films are based on the 1937 novel The Hobbit by J. R. R. Tolkien, with large portions of the trilogy inspired by the appendices to The Return of the King, which expand on the story told in The Hobbit, as well as new material and characters written especially for the films. Together they act as a prequel to Jackson's The Lord of the Rings film trilogy.
+      </p>
+      <p>
+        The screenplays were written by Fran Walsh, Philippa Boyens, Jackson, and Guillermo del Toro, who was originally chosen to direct before his departure from the project. The films take place in the fictional world of Middle-earth sixty years before the beginning of The Lord of the Rings and follow hobbit Bilbo Baggins (Martin Freeman), who is convinced by the wizard Gandalf the Grey (Ian McKellen) to accompany thirteen Dwarves, led by Thorin Oakenshield (Richard Armitage), on a quest to reclaim the Lonely Mountain from the dragon Smaug (Benedict Cumberbatch). The films expand upon certain elements from the novel and other source material, such as Gandalf's investigation at Dol Guldur which leads him to the Necromancer, and the heroes' pursuit by the orcs Azog and Bolg, who seek vengeance against Thorin and his kindred.
+      </p>
+      <p>
+        The films feature an ensemble cast that includes James Nesbitt, Ken Stott, Evangeline Lilly, Lee Pace and Luke Evans, with several actors reprising their roles from The Lord of the Rings, including Cate Blanchett, Orlando Bloom, Ian Holm, Christopher Lee, Hugo Weaving, Elijah Wood, and Andy Serkis. The films also feature Manu Bennett, Sylvester McCoy, Mikael Persbrandt, Lawrence Makoare, and Stephen Fry. Returning for production, among others, were illustrators John Howe and Alan Lee, art director Dan Hennah, cinematographer Andrew Lesnie, and composer Howard Shore, while props were again crafted by Wētā Workshop, with visual effects managed by Weta Digital.
+      </p>
+      <p>
+        The first film in the trilogy premiered at the Embassy Theatre in Wellington on 28 November 2012. 100,000 people lined the red carpet on Courtenay Place, and the entire event was broadcast live on television in New Zealand and streamed over the Internet. The second film of the series premiered at the Dolby Theatre in Los Angeles on 2 December 2013. The final film premiered at the Odeon Leicester Square in London on 1 December 2014.The series received mixed reviews, but was a financial success and became one of the highest-grossing film series of all time having grossed over $2.9 billion worldwide. It was nominated for various awards and won several, although not as many as the original trilogy.
+      </p>
+      <div class="source"><b>Source: </b>Wikipedia</div>
+      
+      
+      
+      <!-- Hobbit movies in order -->
+      <h2 id="HobbitM-order">Hobbit movies in order</h2>
+      <ul class="hobbit-movies">
+        <li class="movie-list">An Unexpected Journey (2012)</li>
+        <ul class="runTime">
+          <li>RUNNING TIME</li>
+          <li>- 169 minutes (Theatrical)</li>
+          <li>- 182 minutes (Extended)</li>
+        </ul>
+        
+        <li class="movie-list">The Desolation of Smaug (2013)</li>
+        <ul class="runTime">
+          <li>RUNNING TIME</li>
+          <li>- 161 minutes (Theatrical)</li>
+          <li>- 186 minutes (Extended)</li>
+        </ul>
+        
+        <li class="movie-list">The Battle of the Five Armies (2014)</li>
+        <ul class="runTime">
+          <li>RUNNING TIME</li>
+          <li>- 144 minutes (Theatrical)</li>
+          <li>- 164 minutes (Extended)</li>
+        </ul>
+      </ul>
+      
+      <!-- Hobbit set of images -->
+      <div id="hobbit-imgcon">
+        <a href="An Unexpected Journey.jpg"><img src="An Unexpected Journey.jpg"></a>
+        <a href="The Desolation of Smaug.jpg"><img src="The Desolation of Smaug.jpg"></a>
+        <a href="The Battle of the Five Armies.jpg"><img src="The Battle of the Five Armies.jpg"></a>
+      </div>
+      
+      
+      
+      <!-- LOTR Series-->
+     <h1 id="lotrHeader">The Lord of the Rings (film series)</h1>
+     <p>
+       <b>The Lord of the Rings</b> is a trilogy of epic fantasy adventure films directed by Peter Jackson, based on the novel The Lord of the Rings by British author J. R. R. Tolkien. The films are subtitled The Fellowship of the Ring (2001), The Two Towers (2002), and The Return of the King (2003). Produced and distributed by New Line Cinema with the co-production of WingNut Films, the films feature an ensemble cast including Elijah Wood, Ian McKellen, Liv Tyler, Viggo Mortensen, Sean Astin, Cate Blanchett, John Rhys-Davies, Christopher Lee, Billy Boyd, Dominic Monaghan, Orlando Bloom, Hugo Weaving, Andy Serkis, and Sean Bean.
+     </p>
+     <p>
+       Set in the fictional world of Middle-earth, the films follow the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, to ensure the destruction of its maker, the Dark Lord Sauron. The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. Meanwhile, Aragorn, heir in exile to the throne of Gondor, along with the elf Legolas, the dwarf Gimli, Merry, Pippin, and the wizard Gandalf, unite to save the Free Peoples of Middle-earth from the forces of Sauron and rally them in the War of the Ring to aid Frodo by distracting Sauron's attention.
+     </p>
+     <p>
+       The three films were shot simultaneously in Jackson's native New Zealand from 11 October 1999 until 22 December 2000, with pick-up shots done from 2001 to 2003. It was one of the biggest and most ambitious film projects ever undertaken, with a budget of $281 million (equivalent to $494 million in 2022). The first film in the series premiered at the Odeon Leicester Square in London on 10 December 2001; the second film premiered at the Ziegfeld Theatre in New York City on 5 December 2002; the third film premiered at the Embassy Theatre in Wellington on 1 December 2003. An extended edition of each film was released on home video a year after its release in cinemas.
+     </p>
+     <p>
+       The Lord of the Rings is widely regarded as one of the greatest and most influential film series ever made. It was a major financial success and is among the highest-grossing film series of all time having grossed over $2.9 billion worldwide. Their faithfulness to the source material was a subject of discussion. The series received numerous accolades, winning 17 Academy Awards out of 30 total nominations, including Best Picture for The Return of the King. In 2021, The Fellowship of the Ring was selected for preservation in the United States National Film Registry by the Library of Congress for being "culturally, historically, or aesthetically significant".
+     </p>
+     <div class="source"><b>Source: </b>Wikipedia</div>
+      
+      
+      
+      <!-- LOTR movies in order -->
+     <h2 id="lotrM-order">The lord of the rings movies in order</h2>
+     <ul class="lotr-movies">
+        <li class="movie-list">The Lord of the Rings: The Fellowship of the Ring (2001)</li>
+        <ul class="runTime">
+          <li>RUNNING TIME</li>
+          <li>- 178 minutes (Theatrical)</li>
+          <li>- 228 minutes (Extended)</li>
+        </ul>
+        
+        <li class="movie-list">The Lord of the Rings: The Two Towers (2002)</li>
+        <ul class="runTime">
+          <li>RUNNING TIME</li>
+          <li>- 179 minutes (Theatrical)</li>
+          <li>- 235 minutes (Extended)</li>
+        </ul>
+        
+        <li class="movie-list">The Lord of the Rings: The Return of the King (2003)</li>
+        <ul class="runTime">
+          <li>RUNNING TIME</li>
+          <li>- 200 minutes (Theatrical)</li>
+          <li>- 263 minutes (Extended)</li>
+        </ul>
+      </ul>
+      
+      
+      <!-- LOTR set of images -->
+      <div id="lotr-imgcon">
+        <a href="The Fellowship Of The Ring.jpg"><img src="The Fellowship Of The Ring.jpg"></a>
+        <a href="The Two Towers.jpg"><img src="The Two Towers.jpg"></a>
+        <a href="The Return of the King.jpg"><img src="The Return of the King.jpg"></a>
+      </div>
+      
+      
+    <!-- comment section -->
+     <div class="textforCommentCon">
+      <span for="commentarea" id="commentText"></span>
+     </div>
+     <div class="commentCon">
+      <div class="inputCon">
+       <input type="text" placeholder="Enter your name... (optional)" id="userNameInput">
+       <textarea placeholder="Write your comment here..." id="commentarea"></textarea>
+      </div>
+      <button class="comment-btn">Comment</button>
+      
+      <!-- element to show comment from textarea -->
+      <div class="resultComments-con"></div>
+     </div>
+     
+      
+      <!-- footer container -->
+      <footer id="footerEl">
+        <div class="contact-text">Contact via Social Media:</div>
+        <div class="icon-con">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-square-instagram"></i>
+         <i class="fa-brands fa-discord"></i>
+         <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+      </footer>
+    </div>
+    
+    <!-- the button to send back to the top of the page -->
+    <a href="#navCon">
+    <div class="go-to-top">
+       <div class="left-line"></div>
+       <div class="right-line"></div>
+    </div>
+    </a>
+  <!-- toast alert when comment button is click -->
+  <div class="toastAlertContainer"></div>
+  
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
