@@ -241,7 +241,7 @@ p {
 }
 
 .comment-btn {
-  width: 100px;
+  width: 120px;
   margin-top: 20px;
   margin-bottom: 40px;
   background-color: #5306e1;
@@ -252,6 +252,7 @@ p {
   border: none;
   cursor: pointer;
   text-align: center;
+  font-weight: bold;
 }
 
 .comment-btn:active {
