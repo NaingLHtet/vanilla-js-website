@@ -442,7 +442,7 @@ p {
   padding-right: 15px;
 }
 
-#commentText:before {
+#commentText::before {
   content: "";
   position: absolute;
   top: 0;
